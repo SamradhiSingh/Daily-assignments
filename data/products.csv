@@ -1,0 +1,5 @@
+id,name,price,category_id
+101,Laptop,55000.0,1
+102,Mobile,20000.0,1
+103,Shoes,2200.0,2
+104,Watch,2600.0,3

@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Placed | ShopEase</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #f3e8ff, #ffffff);
+        }
+
+        .success-container {
+            background: white;
+            width: 90%;
+            max-width: 480px;
+            padding: 45px 30px;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+        }
+
+        .success-icon {
+            width: 90px;
+            height: 90px;
+            background: #dcfce7;
+            color: #16a34a;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 48px;
+            margin: 0 auto 25px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .message {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .order-status {
+            background: #f8f5ff;
+            padding: 18px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            color: #555;
+        }
+
+        .order-status strong {
+            color: #7c3aed;
+        }
+
+        .shop-button {
+            display: inline-block;
+            background: #7c3aed;
+            color: white;
+            padding: 14px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .shop-button:hover {
+            background: #5b21b6;
+        }
+
+        .brand {
+            color: #7c3aed;
+            font-weight: bold;
+            margin-bottom: 25px;
+            font-size: 22px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="success-container">
+
+        <div class="brand">ShopEase</div>
+
+        <div class="success-icon">✓</div>
+
+        <h1>Order Placed!</h1>
+
+        <p class="message">
+            Thank you for shopping with us!
+            Your order has been placed successfully.
+            We hope you enjoy your purchase.
+        </p>
+
+        <div class="order-status">
+            <p> <strong>Order Status:</strong> Confirmed</p>
+            <p style="margin-top: 10px;">Your order is being processed.</p>
+        </div>
+
+        <a href="index.html" class="shop-button">
+            Continue Shopping
+        </a>
+
+    </div>
+
+</body>
+</html>
