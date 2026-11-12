@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleKart | Fashion Store</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+    <div class="logo">STYLEKART</div>
+
+    <nav>
+        <a href="/">HOME</a>
+        <a href="/products">SHOP</a>
+        <a href="#">MEN</a>
+        <a href="#">WOMEN</a>
+        <a href="#">KIDS</a>
+        <a href="#">BEAUTY</a>
+    </nav>
+
+    <input type="text" id="search" placeholder="Search for products...">
+
+    <div class="cart" onclick="showCart()">
+        🛒 Cart (<span id="cart-count">0</span>)
+    </div>
+</header>
+
+<section class="banner">
+    <div>
+        <h1>Fashion That Defines You</h1>
+        <p>Discover the latest trends at amazing prices.</p>
+        <button onclick="window.location.href='/products'">SHOP NOW</button>
+    </div>
+</section>
+
+<h2 class="heading" id="products">TRENDING COLLECTIONS</h2>
+
+<div class="products" id="product-list">
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500" alt="White T-shirt">
+        <h3>Classic White T-Shirt</h3>
+        <p>₹499</p>
+        <button onclick="addToCart('Classic White T-Shirt',499)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?w=500" alt="Blue jeans">
+        <h3>Blue Denim Jeans</h3>
+        <p>₹999</p>
+        <button onclick="addToCart('Blue Denim Jeans',999)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=500" alt="Women's heels">
+        <h3>Stylish Heels</h3>
+        <p>₹1,299</p>
+        <button onclick="addToCart('Stylish Heels',1299)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=500" alt="Jacket">
+        <h3>Casual Jacket</h3>
+        <p>₹1,499</p>
+        <button onclick="addToCart('Casual Jacket',1499)">Add to Cart</button>
+    </div>
+
+</div>
+
+<section class="cart-section" id="cart-section">
+    <h2>YOUR SHOPPING CART</h2>
+    <div id="cart-items">Your cart is empty.</div>
+    <h3 id="total">Total: ₹0</h3>
+</section>
+
+<footer>
+    <p>© 2026 StyleKart. All Rights Reserved.</p>
+    <p>Fashion | Style | Shopping</p>
+</footer>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
